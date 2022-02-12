@@ -30,7 +30,7 @@ void quicksort(int a, int b, int* x) {
         return;
     }
     int m, k, l, r;
-    m = rand() % (b - a + 1) + a;
+    m = (rand()*rand()) % (b - a + 1) + a;
     k = x[m];
     l = a-1;
     r = b+1;
